@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gizlilik Politikası – İnce Ele</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico" />
+    <style>
+      :root {
+        --bg: #faf9f7;
+        --surface: #ffffff;
+        --text: #1a1a1a;
+        --muted: #6b6b6b;
+        --accent: #04314b;
+        --accent-light: #afc6d47b;
+        --border: #e8e4de;
+        --radius: 10px;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        /* background: var(--bg); */
+        color: var(--text);
+        font-family: "DM Sans", sans-serif;
+        font-size: 16px;
+        line-height: 1.75;
+      }
+
+      .lang-bar {
+        background: var(--accent);
+        color: #fff;
+        text-align: center;
+        padding: 10px 20px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .lang-bar a {
+        color: #fff;
+        font-weight: 600;
+        text-decoration: underline;
+        margin-left: 8px;
+      }
+
+      header {
+        background: var(--surface);
+        /* border-bottom: 1px solid var(--border); */
+        padding: 36px 24px 28px;
+        text-align: center;
+      }
+      header .app-name {
+        font-family: "DM Serif Display", serif;
+        font-size: 2rem;
+        color: var(--accent);
+        letter-spacing: -0.5px;
+      }
+      header h1 {
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: var(--muted);
+        margin-top: 4px;
+      }
+      header .meta {
+        font-size: 13px;
+        color: var(--muted);
+        margin-top: 8px;
+      }
+
+      .wrapper {
+        max-width: 780px;
+        margin: 0 auto;
+        padding: 40px 24px 80px;
+      }
+
+      .toc {
+        background: var(--accent-light);
+        border: 1px solid #c0dece;
+        border-radius: var(--radius);
+        padding: 24px 28px;
+        margin-bottom: 48px;
+      }
+      .toc h2 {
+        font-family: "DM Serif Display", serif;
+        font-size: 1rem;
+        color: var(--accent);
+        margin-bottom: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+      .toc ol {
+        padding-left: 20px;
+      }
+      .toc li {
+        margin: 4px 0;
+        font-size: 14px;
+      }
+      .toc a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      .toc a:hover {
+        text-decoration: underline;
+      }
+
+      section {
+        margin-bottom: 48px;
+      }
+      section h2 {
+        font-family: "DM Serif Display", serif;
+        font-size: 1.35rem;
+        color: var(--text);
+        margin-bottom: 16px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--accent-light);
+      }
+      section h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--text);
+        margin: 20px 0 8px;
+      }
+      p {
+        margin-bottom: 14px;
+        color: #333;
+      }
+      ul,
+      ol {
+        padding-left: 22px;
+        margin-bottom: 14px;
+      }
+      li {
+        margin-bottom: 6px;
+        color: #333;
+      }
+      strong {
+        color: var(--text);
+      }
+      em {
+        color: var(--muted);
+        font-style: italic;
+      }
+      a {
+        color: var(--accent);
+      }
+
+      .callout {
+        background: var(--accent-light);
+        border-left: 4px solid var(--accent);
+        border-radius: 0 var(--radius) var(--radius) 0;
+        padding: 14px 18px;
+        margin: 16px 0;
+        font-size: 14.5px;
+      }
+
+      .kvkk-badge {
+        display: inline-block;
+        background: #2d7a4f;
+        color: #fff;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        padding: 2px 8px;
+        border-radius: 4px;
+        vertical-align: middle;
+        margin-left: 8px;
+        text-transform: uppercase;
+      }
+      .kvkk-box {
+        background: #f0faf5;
+        border: 1.5px solid #2d7a4f;
+        border-radius: var(--radius);
+        padding: 18px 22px;
+        margin: 16px 0;
+      }
+      .kvkk-box p {
+        margin-bottom: 0;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 13px;
+        color: var(--muted);
+        padding: 24px;
+        border-top: 1px solid var(--border);
+      }
+      footer a {
+        color: var(--accent);
+      }
+
+      @media (max-width: 600px) {
+        header .app-name {
+          font-size: 1.6rem;
+        }
+        .wrapper {
+          padding: 28px 16px 60px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lang-bar">
+      Kullanım Koşullarına Buradan Ulaşabilirsiniz &mdash;
+      <a href="termsandconditions.html">Kullanım Koşulları →</a>
+    </div>
+
+    <header>
+      <img src="logo.png" alt="ince-ele-logo" width="80" height="80" />
+      <div class="app-name">İnce Ele</div>
+      <h1>Gizlilik Politikası</h1>
+      <div class="meta">Son güncelleme: 03 Haziran 2026</div>
+    </header>
+
+    <div class="wrapper">
+      <div class="callout">
+        <strong>Sorularınız mı var?</strong> Bu Gizlilik Politikası, gizlilik
+        haklarınızı ve tercihlerinizi anlamanıza yardımcı olacaktır.
+        Politikalarımızı kabul etmiyorsanız lütfen Hizmetlerimizi kullanmayınız.
+        Sorularınız için
+        <a href="mailto:inceele.app@gmail.com">inceele.app@gmail.com</a>
+        adresinden bize ulaşabilirsiniz.
+      </div>
+
+      <!-- TOC -->
+      <nav class="toc" aria-label="İçindekiler">
+        <h2>İçindekiler</h2>
+        <ol>
+          <li><a href="#s1">Hangi Bilgileri Topluyoruz?</a></li>
+          <li><a href="#s2">Bilgilerinizi Nasıl İşliyoruz?</a></li>
+          <li>
+            <a href="#s3"
+              >Kişisel Bilgilerinizi Ne Zaman ve Kimlerle Paylaşıyoruz?</a
+            >
+          </li>
+          <li>
+            <a href="#s4"
+              >Çerezler ve Diğer İzleme Teknolojileri Kullanıyor Muyuz?</a
+            >
+          </li>
+          <li><a href="#s5">Yapay Zeka Tabanlı Ürünler Sunuyor Muyuz?</a></li>
+          <li>
+            <a href="#s6">Sosyal Medya Girişlerinizi Nasıl Yönetiyoruz?</a>
+          </li>
+          <li><a href="#s7">Bilgilerinizi Ne Kadar Süre Saklıyoruz?</a></li>
+          <li><a href="#s8">Bilgilerinizi Nasıl Güvende Tutuyoruz?</a></li>
+          <li><a href="#s9">Küçüklerden Bilgi Topluyor Muyuz?</a></li>
+          <li>
+            <a href="#s10">Gizlilik Haklarınız ve Verilerinizi Yönetme</a>
+          </li>
+          <li><a href="#s11">İzleme Tercihleriniz (Do-Not-Track)</a></li>
+          <li><a href="#s12">Gizlilik Politikasında Değişiklikler</a></li>
+          <li><a href="#s13">Bizimle Nasıl İletişime Geçebilirsiniz?</a></li>
+        </ol>
+      </nav>
+
+      <!-- 1 -->
+      <section id="s1">
+        <h2>1. Hangi Bilgileri Topluyoruz?</h2>
+
+        <h3>Bize Bizzat İlettiğiniz Kişisel Bilgiler</h3>
+        <p>
+          Hizmetlerimize kayıt olduğunuzda, ürün veya hizmetlerimize ilgi
+          gösterdiğinizde, etkinliklere katıldığınızda ya da bizimle iletişime
+          geçtiğinizde gönüllü olarak sağladığınız kişisel bilgileri topluyoruz:
+        </p>
+        <ul>
+          <li>Ad ve soyad</li>
+          <li>E-posta adresi</li>
+          <li>Parola</li>
+          <li>Kullanıcıya ait alerji bilgileri</li>
+        </ul>
+        <h3>Tarama Verileri</h3>
+        <p>
+          Uygulama üzerinden bir ürün taradığınızda aşağıdaki bilgiler
+          hesabınıza bağlı olarak kaydedilir:
+        </p>
+        <ul>
+          <li>Ürün adı ve markası</li>
+          <li>Tespit edilen alerjenler, risk seviyesi ve kritik uyarılar</li>
+          <li>Alerjen profilinizle eşleşme sonucu (güvenli / güvenli değil)</li>
+          <li>Tarama tarihi ve saati</li>
+          <li>Kamera aracılığıyla okunan ham içerik listesi (OCR çıktısı)</li>
+        </ul>
+        <h3>
+          Özel Nitelikli Kişisel Veriler <span class="kvkk-badge">KVKK</span>
+        </h3>
+        <p>
+          Uygulanabilir mevzuatın izin verdiği ölçüde, açık rızanıza dayalı
+          olarak aşağıdaki özel nitelikli kişisel verileri işleyebiliriz:
+        </p>
+        <ul>
+          <li>Sağlık verileri</li>
+          <li>Kişinin alerjilerine ilişkin bilgiler</li>
+        </ul>
+        <div class="kvkk-box">
+          <p>
+            Uygulamamız alerji ve sağlık durumlarını işlediğinden, söz konusu
+            veriler 6698 sayılı KVKK kapsamında
+            <strong>özel nitelikli kişisel veri</strong> statüsündedir. Bu
+            veriler yalnızca uygulamaya kendi isteğinizle girdiğinizde, yani
+            <strong>açık rızanızla</strong>, işlenmektedir. Rızanızı her zaman
+            geri çekebilirsiniz.
+          </p>
+        </div>
+
+        <h3>Sosyal Medya Giriş Verileri</h3>
+        <p>
+          Mevcut sosyal medya hesabınızla (Facebook, X vb.) kayıt olma seçeneği
+          sunabiliriz. Bu seçeneği tercih ederseniz adınız, e-posta adresiniz ve
+          profil fotoğrafı gibi temel profil bilgilerini alırız. Ayrıntılar için
+          bkz. <a href="#s6">Bölüm 6</a>.
+        </p>
+
+        <h3>Uygulama ve Cihaz Verileri</h3>
+        <p>
+          Uygulamamızı kullanıyorsanız, izin vermeniz halinde şu bilgileri de
+          toplayabiliriz:
+        </p>
+        <ul>
+          <li>
+            <em>Mobil Cihaz Erişimi.</em> Kamera ve depolama alanı gibi
+            özelliklere erişim talep edebiliriz. İzinleri cihaz ayarlarınızdan
+            değiştirebilirsiniz.
+          </li>
+          <li>
+            <em>Mobil Cihaz Verileri.</em> Cihaz kimliği, model, işletim
+            sistemi, uygulama sürümü, tarayıcı türü ve IP adresi gibi teknik
+            bilgiler otomatik olarak toplanabilir.
+          </li>
+          <li>
+            <em>Anlık Bildirimler.</em> Bildirim gönderme izni talep edebiliriz;
+            cihaz ayarlarınızdan istediğiniz zaman kapatabilirsiniz.
+          </li>
+        </ul>
+
+        <h3>Google API</h3>
+        <p>
+          Google API'lerinden alınan bilgilerin kullanımı,
+          <a
+            href="https://developers.google.com/terms/api-services-user-data-policy"
+            target="_blank"
+          >
+            Google API Hizmetleri Kullanıcı Veri Politikası </a
+          >'na ve
+          <a
+            href="https://developers.google.com/terms/api-services-user-data-policy#limited-use"
+            target="_blank"
+          >
+            Sınırlı Kullanım gereksinimlerine
+          </a>
+          uygun olacaktır.
+        </p>
+      </section>
+
+      <!-- 2 -->
+      <section id="s2">
+        <h2>2. Bilgilerinizi Nasıl İşliyoruz?</h2>
+        <p>Kişisel bilgilerinizi aşağıdaki amaçlarla işliyoruz:</p>
+        <ul>
+          <li>
+            <strong>Hesap oluşturma ve kimlik doğrulama.</strong> Hesabınızı
+            oluşturabilmeniz, giriş yapabilmeniz ve düzenli çalışabilmesi için.
+          </li>
+          <li>
+            <strong>Hizmetlerin sunulması.</strong> Talep ettiğiniz hizmeti
+            sağlayabilmek için.
+          </li>
+          <li>
+            <strong>Yönetimsel bilgilendirme.</strong> Ürün, hizmet ve
+            politikalarımızdaki değişiklikleri size iletmek için.
+          </li>
+          <li>
+            <strong>Güvenlik ve dolandırıcılık önleme.</strong> Hizmetlerimizin
+            güvenli tutulmasına yönelik çabalarımız kapsamında.
+          </li>
+          <li>
+            <strong>Hizmet iyileştirme.</strong> Kullanım eğilimlerini
+            belirlemek ve Hizmetlerimizi geliştirmek için.
+          </li>
+        </ul>
+      </section>
+
+      <!-- 3 -->
+      <section id="s3">
+        <h2>3. Kişisel Bilgilerinizi Ne Zaman ve Kimlerle Paylaşıyoruz?</h2>
+        <p>
+          Verilerinizi, bizim adımıza hizmet sunan ve bu iş için söz konusu
+          bilgilere erişmesi gereken üçüncü taraf satıcı ve hizmet
+          sağlayıcılarla paylaşabiliriz. Bu taraflarla, verilerinizi korumaya
+          yönelik sözleşmeler imzaladık. Paylaşım yapabileceğimiz üçüncü taraf
+          kategorileri:
+        </p>
+        <ul>
+          <li>Yapay Zeka (YZ) Platformları</li>
+          <li>Bulut Bilişim Hizmetleri</li>
+          <li>Veri Analitik ve Depolama Hizmetleri</li>
+          <li>Performans İzleme Araçları</li>
+          <li>Kullanıcı Hesabı Kayıt ve Kimlik Doğrulama Hizmetleri</li>
+        </ul>
+        <p>
+          Ayrıca herhangi bir birleşme, varlık satışı veya iş devri sürecinde
+          bilgilerinizi ilgili taraflarla paylaşmamız gerekebilir.
+        </p>
+      </section>
+
+      <!-- 4 -->
+      <section id="s4">
+        <h2>4. Çerezler ve Diğer İzleme Teknolojileri Kullanıyor Muyuz?</h2>
+        <p>
+          Hizmetlerimizle etkileşime girdiğinizde bilgi toplamak için çerezler
+          ve benzeri izleme teknolojilerini (web işaretçileri, piksel vb.)
+          kullanabiliriz. Bu teknolojiler güvenliğin sağlanmasına, çökmelerin
+          önlenmesine, tercihlerinizin kaydedilmesine ve temel site işlevlerine
+          yardımcı olur. Analiz ve reklamcılık amacıyla üçüncü tarafların da
+          Hizmetlerimizde izleme teknolojisi kullanmasına izin verebiliriz.
+        </p>
+
+        <h3>Google Analytics</h3>
+        <p>
+          Hizmetlerin kullanımını analiz etmek için Google Analytics ile bilgi
+          paylaşabiliriz. İzlemeden çıkmak için
+          <a href="https://tools.google.com/dlpage/gaoptout" target="_blank">
+            tools.google.com/dlpage/gaoptout
+          </a>
+          adresini ziyaret edebilirsiniz.
+        </p>
+      </section>
+
+      <!-- 5 -->
+      <section id="s5">
+        <h2>5. Yapay Zeka Tabanlı Ürünler Sunuyor Muyuz?</h2>
+        <p>
+          Hizmetlerimizin bir parçası olarak yapay zeka ve makine öğrenmesi
+          destekli ürünler, özellikler ve araçlar ("YZ Ürünleri") sunmaktayız.
+        </p>
+        <p>
+          YZ Ürünlerini <strong>Google Cloud AI</strong> dahil üçüncü taraf
+          hizmet sağlayıcılar aracılığıyla sunuyoruz. Girdileriniz, çıktılarınız
+          ve kişisel bilgileriniz bu sağlayıcılar tarafından işlenecektir;
+          herhangi bir sağlayıcının koşullarını ihlal edecek şekilde kullanım
+          yapılamaz. YZ Ürünlerimiz; YZ botları, doğal dil işleme ve metin
+          analizi işlevleri için tasarlanmıştır. Bu ürünler aracılığıyla işlenen
+          tüm kişisel bilgiler bu Gizlilik Politikası çerçevesinde yönetilir.
+        </p>
+      </section>
+
+      <!-- 6 -->
+      <section id="s6">
+        <h2>6. Sosyal Medya Girişlerinizi Nasıl Yönetiyoruz?</h2>
+        <p>
+          Hizmetlerimize üçüncü taraf sosyal medya hesabınızla (Facebook, X vb.)
+          kayıt ve giriş yapma imkânı sunmaktayız. Bu seçeneği tercih etmeniz
+          halinde adınız, e-posta adresiniz ve profil fotoğrafı gibi temel
+          profil bilgilerini alırız. Aldığımız bilgileri yalnızca bu Gizlilik
+          Politikasında açıklanan amaçlar doğrultusunda kullanırız. Sosyal medya
+          sağlayıcınızın gizlilik politikasını da incelemenizi öneririz.
+        </p>
+      </section>
+
+      <!-- 7 -->
+      <section id="s7">
+        <h2>7. Bilgilerinizi Ne Kadar Süre Saklıyoruz?</h2>
+        <p>
+          Kişisel bilgilerinizi, bu Gizlilik Politikasında belirtilen amaçlar
+          için gerekli olduğu sürece — en fazla hesabınızın aktif olduğu süre
+          boyunca — saklarız. İşlemeye devam etmek için meşru bir gerekçemiz
+          kalmadığında bilgileri siler veya anonim hâle getiririz. Yedek
+          arşivlerde yer alan veriler ise silinmesi mümkün olana dek güvenli
+          biçimde depolanır ve daha fazla işlenmesi engellenir.
+        </p>
+      </section>
+
+      <!-- 8 -->
+      <section id="s8">
+        <h2>8. Bilgilerinizi Nasıl Güvende Tutuyoruz?</h2>
+        <p>
+          İşlediğimiz kişisel bilgilerin güvenliğini korumak amacıyla uygun
+          teknik ve kurumsal güvenlik önlemleri uyguladık. Bununla birlikte,
+          İnternet üzerindeki hiçbir elektronik iletişim %100 güvenli değildir;
+          bu nedenle bilgilerinize yetkisiz erişimi kesin olarak
+          engelleyeceğimizi taahhüt edemeyiz. Hizmetlere yalnızca güvenli
+          ortamlarda erişmenizi öneririz.
+        </p>
+      </section>
+
+      <!-- 9 -->
+      <section id="s9">
+        <h2>9. Küçüklerden Bilgi Topluyor Muyuz?</h2>
+        <p>
+          18 yaşın altındaki çocuklardan bilerek veri toplamıyor ve onlara
+          yönelik pazarlama yapmıyoruz. Hizmetlerimizi kullanarak en az 18
+          yaşında olduğunuzu ya da ilgili küçüğün velisi veya ebeveyni olarak
+          onun kullanımına rıza gösterdiğinizi kabul etmiş sayılırsınız. 18 yaş
+          altı bir kullanıcıya ait veri toplandığını fark edersek hesabı devre
+          dışı bırakır ve verileri hızla sileriz. Böyle bir durumdan haberdar
+          iseniz lütfen bizimle iletişime geçin.
+        </p>
+      </section>
+
+      <!-- 10 — merged with former section 14 -->
+      <section id="s10">
+        <h2>10. Gizlilik Haklarınız ve Verilerinizi Yönetme</h2>
+
+        <p>
+          Bulunduğunuz ülkenin geçerli yasalarına bağlı olarak; hakkınızda
+          toplanan kişisel bilgilere erişim talep etme, bunların nasıl
+          işlendiğini öğrenme, hataları düzeltme, silinmesini isteme ve işlemeye
+          verdiğiniz rızayı geri çekme haklarınız olabilir. Bu haklar bazı
+          durumlarda mevzuat tarafından sınırlandırılabilir.
+        </p>
+
+        <div class="kvkk-box">
+          <p>
+            <strong
+              >Türkiye'deki Kullanıcılar için KVKK Hakları
+              <span class="kvkk-badge">KVKK</span></strong
+            >
+          </p>
+          <p style="margin-top: 10px">
+            6698 sayılı KVKK'nın 11. maddesi uyarınca; kişisel veri işlenip
+            işlenmediğini öğrenme, işlenmişse bilgi talep etme, düzeltilmesini,
+            silinmesini veya yok edilmesini isteme haklarına sahipsiniz. Bu
+            haklarınızı kullanmak için
+            <a href="mailto:inceele.app@gmail.com">inceele.app@gmail.com</a>
+            adresinden bizimle iletişime geçebilirsiniz.
+          </p>
+        </div>
+
+        <h3>Hesabınızı Yönetme</h3>
+        <p>
+          Hesap ayarlarına giriş yaparak hesabınızı silebilir veya alerji
+          bilgilerinizi güncelleyebilirsiniz. Hesap kapatma talebinde bulunmanız
+          hâlinde bilgilerinizi aktif veri tabanlarımızdan sileriz; ancak
+          dolandırıcılığı önlemek, soruşturmalara yardımcı olmak ve yasal
+          gerekliliklere uymak amacıyla belirli bilgileri dosyalarımızda
+          saklayabiliriz.
+        </p>
+
+        <h3>Rızanızı Geri Çekme</h3>
+        <p>
+          Kişisel bilgilerinizin işlenmesine dayanak olarak rızanıza
+          güveniyorsak, bu rızayı istediğiniz zaman geri çekebilirsiniz. Geri
+          çekme, önceki işlemlerin hukuka uygunluğunu etkilemez. Talebiniz için
+          aşağıdaki iletişim bilgilerini kullanabilirsiniz.
+        </p>
+      </section>
+
+      <!-- 11 -->
+      <section id="s11">
+        <h2>11. İzleme Tercihleriniz (Do-Not-Track)</h2>
+        <p>
+          Çoğu tarayıcı ve bazı mobil işletim sistemleri, çevrimiçi tarama
+          etkinliklerinizin izlenmemesini bildiren bir "Do-Not-Track" (DNT)
+          ayarı içermektedir. DNT sinyallerini tanımaya yönelik teknik
+          standartlar henüz kesinleşmediğinden bu sinyallere şu an yanıt
+          vermemekteyiz. Uyulması gereken bir standart kabul edilirse bunu bu
+          politikanın güncellenmiş sürümünde bildireceğiz.
+        </p>
+      </section>
+
+      <!-- 12 -->
+      <section id="s12">
+        <h2>12. Gizlilik Politikasında Değişiklikler</h2>
+        <p>
+          Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Güncellenmiş
+          sürüm, sayfanın üst kısmındaki "Son Güncelleme" tarihi ile
+          belirtilecektir. Esaslı değişiklikler yapılması hâlinde bu sayfada
+          belirgin biçimde duyurabilir veya size doğrudan bildirim
+          gönderebiliriz. Verilerinizin nasıl korunduğuna dair güncel bilgi
+          sahibi olmak için politikayı düzenli olarak gözden geçirmenizi
+          öneririz.
+        </p>
+      </section>
+
+      <!-- 13 -->
+      <section id="s13">
+        <h2>13. Bizimle Nasıl İletişime Geçebilirsiniz?</h2>
+        <p>
+          Bu politika veya veri haklarınızla ilgili her türlü soru, görüş ve
+          talebiniz için bize aşağıdaki kanallardan ulaşabilirsiniz:
+        </p>
+        <p>
+          <strong>E-posta:</strong>
+          <a href="mailto:inceele.app@gmail.com">inceele.app@gmail.com</a>
+        </p>
+        <p>
+          <strong>Posta:</strong><br />
+          Eda İpek Sanlı &amp; Gözde Büyükyılmaz<br />
+          İstanbul / Türkiye
+        </p>
+      </section>
+    </div>
+
+    <footer>
+      &copy; 2026 Eda İpek Sanlı &amp; Gözde Büyükyılmaz &mdash; İnce Ele
+      &nbsp;|&nbsp;
+      <a href="termsandconditions.html">Kullanım Koşulları</a>
+      &nbsp;|&nbsp;
+      <a href="mailto:inceele.app@gmail.com">inceele.app@gmail.com</a>
+    </footer>
+  </body>
+</html>

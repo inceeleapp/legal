@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kullanım Koşulları – İnce Ele</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #faf9f7;
+        --surface: #ffffff;
+        --text: #1a1a1a;
+        --muted: #6b6b6b;
+        --accent: #04314b;
+        --accent-light: #afc6d47b;
+        --border: #e8e4de;
+        --radius: 10px;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        /* background: var(--bg); */
+        color: var(--text);
+        font-family: "DM Sans", sans-serif;
+        font-size: 16px;
+        line-height: 1.75;
+      }
+
+      .lang-bar {
+        background: var(--accent);
+        color: #fff;
+        text-align: center;
+        padding: 10px 20px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .lang-bar a {
+        color: #fff;
+        font-weight: 600;
+        text-decoration: underline;
+        margin-left: 8px;
+      }
+
+      header {
+        background: var(--surface);
+        /* border-bottom: 1px solid var(--border); */
+        padding: 36px 24px 28px;
+        text-align: center;
+      }
+      header .app-name {
+        font-family: "DM Serif Display", serif;
+        font-size: 2rem;
+        color: var(--accent);
+        letter-spacing: -0.5px;
+      }
+      header h1 {
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: var(--muted);
+        margin-top: 4px;
+      }
+      header .meta {
+        font-size: 13px;
+        color: var(--muted);
+        margin-top: 8px;
+      }
+
+      .wrapper {
+        max-width: 780px;
+        margin: 0 auto;
+        padding: 40px 24px 80px;
+      }
+
+      .toc {
+        background: var(--accent-light);
+        border: 1px solid #c0dece;
+        border-radius: var(--radius);
+        padding: 24px 28px;
+        margin-bottom: 48px;
+      }
+      .toc h2 {
+        font-family: "DM Serif Display", serif;
+        font-size: 1rem;
+        color: var(--accent);
+        margin-bottom: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+      .toc ol {
+        padding-left: 20px;
+      }
+      .toc li {
+        margin: 4px 0;
+        font-size: 14px;
+      }
+      .toc a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      .toc a:hover {
+        text-decoration: underline;
+      }
+
+      section {
+        margin-bottom: 48px;
+      }
+      section h2 {
+        font-family: "DM Serif Display", serif;
+        font-size: 1.35rem;
+        color: var(--text);
+        margin-bottom: 16px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--accent-light);
+      }
+      section h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--text);
+        margin: 20px 0 8px;
+      }
+      p {
+        margin-bottom: 14px;
+        color: #333;
+      }
+      ul,
+      ol {
+        padding-left: 22px;
+        margin-bottom: 14px;
+      }
+      li {
+        margin-bottom: 6px;
+        color: #333;
+      }
+      strong {
+        color: var(--text);
+      }
+      em {
+        color: var(--muted);
+        font-style: italic;
+      }
+      a {
+        color: var(--accent);
+      }
+
+      .callout {
+        background: var(--accent-light);
+        border-left: 4px solid var(--accent);
+        border-radius: 0 var(--radius) var(--radius) 0;
+        padding: 14px 18px;
+        margin: 16px 0;
+        font-size: 14.5px;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 13px;
+        color: var(--muted);
+        padding: 24px;
+        border-top: 1px solid var(--border);
+      }
+      footer a {
+        color: var(--accent);
+      }
+
+      @media (max-width: 600px) {
+        header .app-name {
+          font-size: 1.6rem;
+        }
+        .wrapper {
+          padding: 28px 16px 60px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lang-bar">
+      Gizlilik Politikasına Buradan Ulaşabilirsiniz &mdash;
+      <a href="index.html">Gizlilik Politikası →</a>
+    </div>
+
+    <header>
+      <img src="logo.png" alt="ince-ele-logo" width="80" height="80" />
+      <div class="app-name">İnce Ele</div>
+      <h1>Kullanım Şartları ve Sözleşmesi</h1>
+      <div class="meta">Son güncelleme: 4 Haziran 2026</div>
+    </header>
+
+    <div class="wrapper">
+      <div class="callout">
+        <strong>Lütfen dikkatle okuyunuz.</strong> Hizmetlerimize erişerek bu
+        Yasal Şartların tamamını okuduğunuzu, anladığınızı ve bunlara bağlı
+        kalmayı kabul ettiğinizi beyan etmiş olursunuz. Sorularınız için
+        <a href="mailto:inceele.app@gmail.com">inceele.app@gmail.com</a>
+        adresinden bize ulaşabilirsiniz.
+      </div>
+
+      <nav class="toc" aria-label="İçindekiler">
+        <h2>İçindekiler</h2>
+        <ol>
+          <li><a href="#s1">Hizmetlerimiz</a></li>
+          <li><a href="#s2">Fikri Mülkiyet Hakları</a></li>
+          <li><a href="#s3">Kullanıcı Beyanları</a></li>
+          <li><a href="#s4">Yasaklanmış Faaliyetler</a></li>
+          <li><a href="#s5">Kullanıcı Verileri ve İçerik Lisansı</a></li>
+          <li><a href="#s6">Hizmetlerin Yönetimi</a></li>
+          <li><a href="#s7">Süre ve Fesih</a></li>
+          <li><a href="#s8">Değişiklikler ve Kesintiler</a></li>
+          <li><a href="#s9">Uygulanacak Hukuk</a></li>
+          <li><a href="#s10">Uyuşmazlıkların Çözümü</a></li>
+          <li><a href="#s11">Düzeltmeler</a></li>
+          <li><a href="#s12">Sorumluluk Reddi (Disclaimer)</a></li>
+          <li><a href="#s13">Sorumluluğun Sınırlandırılması</a></li>
+          <li><a href="#s14">Tazminat</a></li>
+          <li><a href="#s15">Kullanıcı Verileri</a></li>
+          <li><a href="#s16">Elektronik İletişim, İşlemler ve İmzalar</a></li>
+          <li><a href="#s17">Çeşitli Hükümler</a></li>
+          <li><a href="#s18">İletişim</a></li>
+        </ol>
+      </nav>
+
+      <section id="s1">
+        <h2>1. Hizmetlerimiz</h2>
+        <p>
+          Hizmetlerin kullanımı sırasında sunulan bilgiler, bu bilgilerin
+          dağıtımının veya kullanımının yerel yasalara ya da yönetmeliklere
+          aykırı olduğu veya bizi herhangi bir tescil yükümlülüğüne tabi
+          kılacağı ülkelerde/bölgelerde dağıtılmak veya kullanılmak üzere
+          tasarlanmamıştır.
+        </p>
+      </section>
+
+      <section id="s2">
+        <h2>2. Fikri Mülkiyet Hakları</h2>
+
+        <h3>Bizim Fikri Mülkiyetimiz:</h3>
+        <p>
+          Hizmetlerdeki tüm kaynak kodları, veri tabanları, işlevsellikler,
+          yazılımlar, web sitesi/uygulama tasarımları, ses, video, metin,
+          fotoğraflar ve grafikler (topluca "İçerik") dahil olmak üzere tüm
+          fikri mülkiyet haklarının sahibi veya lisans sahibiyiz. Ayrıca, burada
+          yer alan ticari markalar, hizmet markaları ve logolar ("Markalar") da
+          Şirketimize aittir. İçerik ve Markalar, Türkiye Cumhuriyeti Fikir ve
+          Sanat Eserleri Kanunu, Sınai Mülkiyet Kanunu ve uluslararası telif
+          hakkı ile ticari marka yasaları tarafından korunmaktadır.
+        </p>
+
+        <h3>Hizmetlerimizi Kullanımınız:</h3>
+        <p>
+          Bu Yasal Şartlara ve özellikle aşağıda yer alan "YASAKLANMIŞ
+          FAALİYETLER" bölümüne uymanız kaydıyla, size yalnızca kişisel, ticari
+          olmayan kullanımınız için Hizmetlere erişmeniz ve İçeriğin düzgün bir
+          şekilde erişim sağladığınız herhangi bir bölümünün bir kopyasını
+          indirmeniz veya yazdırmanız için münhasır olmayan, devredilemez ve
+          iptal edilebilir bir lisans vermekteyiz. Açık önceden yazılı iznimiz
+          olmaksızın, Hizmetlerin hiçbir bölümü, İçerik veya Markalar ticari
+          amaçlarla kopyalanamaz, çoğaltılamaz, satılamaz veya lisanslanamaz.
+        </p>
+
+        <h3>Geri Bildirimler ve Öneriler:</h3>
+        <p>
+          Uygulamayı geliştirmek amacıyla bize doğrudan gönderdiğiniz her türlü
+          soru, yorum, öneri, fikir veya geri bildirim ("Öneriler"),
+          Şirketimizin mülkiyetine geçecek olup, bu fikirlerin tüm fikri
+          mülkiyet haklarını bize devretmeyi kabul etmektesiniz. Şirket, bu
+          önerileri size herhangi bir atıfta bulunmadan veya tazminat ödemeden
+          her türlü yasal amaçla kısıtlamasız kullanma ve yayma hakkına
+          sahiptir.
+        </p>
+      </section>
+
+      <section id="s3">
+        <h2>3. Kullanıcı Beyanları</h2>
+        <p>Hizmetleri kullanarak şunları beyan ve taahhüt edersiniz:</p>
+        <ul>
+          <li>
+            Yasal ehliyete sahip olduğunuzu ve bu Yasal Şartlara uymayı kabul
+            ettiğinizi;
+          </li>
+          <li>
+            Yaşadığınız ülkede reşit olmadığınız bir yaşta değilseniz (reşit
+            değilseniz veli/vasi izninizin olduğunu);
+          </li>
+          <li>
+            Hizmetlere bot, script veya benzeri otomatik ya da insan dışı
+            yöntemlerle erişmeyeceğinizi;
+          </li>
+          <li>
+            Hizmetleri yasa dışı veya yetkisiz bir amaçla kullanmayacağınızı;
+          </li>
+          <li>
+            Kullanımınızın yürürlükteki hiçbir yasa veya yönetmeliği ihlal
+            etmeyeceğini.
+          </li>
+        </ul>
+        <p>
+          Yanlış, güncel olmayan veya eksik bilgi vermeniz durumunda, hesabınızı
+          askıya alma veya feshetme hakkımız saklıdır.
+        </p>
+      </section>
+
+      <section id="s4">
+        <h2>4. Yasaklanmış Faaliyetler</h2>
+        <p>
+          Hizmetlere yalnızca bizim kullanımınıza sunduğumuz amaçlar
+          doğrultusunda erişebilir ve kullanabilirsiniz. Hizmetler, tarafımızca
+          açıkça onaylanmadığı sürece hiçbir ticari girişim için kullanılamaz.
+        </p>
+        <p>Bir kullanıcı olarak şunları yapmamayı kabul edersiniz:</p>
+        <ul>
+          <li>
+            Yazılı iznimiz olmadan doğrudan veya dolaylı olarak bir koleksiyon,
+            veri tabanı veya dizin oluşturmak amacıyla Hizmetlerden sistematik
+            olarak veri veya diğer içerikleri çekmek (scraping).
+          </li>
+          <li>
+            Şirketi veya diğer kullanıcıları dolandırmaya, aldatmaya veya
+            yanıltmaya çalışmak.
+          </li>
+          <li>
+            Hizmetlerin güvenlikle ilgili özelliklerini devre dışı bırakmak veya
+            engellemek.
+          </li>
+          <li>
+            Görüşümüze göre Şirkete ve/veya Hizmetlere zarar vermek, itibarını
+            zedelemek.
+          </li>
+          <li>
+            Hizmetlerden elde edilen bilgileri başka bir kişiyi taciz etmek veya
+            ona zarar vermek amacıyla kullanmak.
+          </li>
+          <li>
+            Destek hizmetlerimizi kötüye kullanmak veya asılsız ihbarlarda
+            bulunmak.
+          </li>
+          <li>
+            Hizmetleri yürürlükteki yasa ve yönetmeliklere aykırı şekilde
+            kullanmak.
+          </li>
+          <li>
+            Hizmetlere virüs, Truva atı veya sistemin işleyişini bozacak
+            materyaller yüklemek veya iletmek.
+          </li>
+          <li>
+            Yazılımı deşifre etmek, derlemeyi çözmek (decompile) veya tersine
+            mühendislik (reverse engineering) yapmak.
+          </li>
+          <li>
+            Hizmetleri, bizimle rekabet etme amaçlı herhangi bir ticari girişim
+            veya gelir getirici çaba için kullanmak.
+          </li>
+        </ul>
+      </section>
+
+      <section id="s5">
+        <h2>5. Kullanıcı Verileri ve İçerik Lisansı</h2>
+        <p>
+          Hizmetleri kullanarak bize sağladığınız bilgi ve kişisel verilere
+          (alerji bilgileri, fotoğraflar vb.), gizlilik politikamız ve
+          yaptığınız seçimler doğrultusunda erişebileceğimizi, bunları
+          saklayabileceğimizi ve işleyebileceğimizi kabul edersiniz.
+        </p>
+        <p>
+          Bu veriler üzerinde herhangi bir mülkiyet iddiasında bulunmayız; tüm
+          haklar size aittir. Ancak sağladığınız verilerin doğruluğundan ve
+          bunlardan doğacak yasal sorumluluktan tamamen siz sorumlusunuz.
+        </p>
+      </section>
+
+      <section id="s6">
+        <h2>6. Hizmetlerin Yönetimi</h2>
+        <p>
+          Şu hakları saklı tutarız (ancak bu konuda bir yükümlülüğümüz yoktur):
+        </p>
+        <ul>
+          <li>Hizmetleri işbu Yasal Şartların ihlallerine karşı izlemek;</li>
+          <li>
+            Yasal Şartları veya yasaları ihlal eden kişilere karşı kendi
+            takdirimize bağlı olarak yasal işlem başlatmak ve bu kişileri kolluk
+            kuvvetlerine bildirmek;
+          </li>
+          <li>
+            Kendi takdirimize bağlı olarak katkılarınızı sınırlandırmak veya
+            kaldırmak;
+          </li>
+          <li>
+            Hizmetleri, haklarımızı koruyacak ve sistemlerimizin düzgün
+            çalışmasını sağlayacak şekilde yönetmek.
+          </li>
+        </ul>
+      </section>
+
+      <section id="s7">
+        <h2>7. Süre ve Fesih</h2>
+        <p>
+          Bu Yasal Şartlar, siz Hizmetleri kullandığınız sürece tam olarak
+          yürürlükte kalacaktır. İşbu sözleşmenin diğer hükümlerini
+          sınırlamaksızın, tamamen kendi takdirimize bağlı olarak ve önceden
+          bildirimde bulunmaksızın veya herhangi bir yasal sorumluluk altına
+          girmeksizin, herhangi bir kişinin Hizmetlere erişimini engelleme
+          (belirli IP adreslerinin engellenmesi dahil) ve hesabınızı feshetme
+          hakkımızı saklı tutarız.
+        </p>
+      </section>
+
+      <section id="s8">
+        <h2>8. Değişiklikler ve Kesintiler</h2>
+        <p>
+          Hizmetlerin içeriğini herhangi bir zamanda, tamamen kendi takdirimize
+          bağlı olarak, bildirimde bulunmaksızın değiştirme, düzenleme veya
+          kaldırma hakkını saklı tutarız. Hizmetlerin her an kesintisiz olarak
+          erişilebilir olacağını garanti edemeyiz. Donanım, yazılım hataları
+          veya bakım çalışmaları nedeniyle Hizmetlerde kesintiler, gecikmeler
+          veya hatalar meydana gelebilir. Herhangi bir kesinti veya aksama
+          süresinde Hizmetlere erişememenizden kaynaklanan kayıplardan ötürü
+          hiçbir sorumluluk kabul etmediğimizi kabul edersiniz.
+        </p>
+      </section>
+
+      <section id="s9">
+        <h2>9. Uygulanacak Hukuk</h2>
+        <p>
+          Bu Yasal Şartlar, Türkiye Cumhuriyeti Kanunlarına tabi olacak ve bu
+          kanunlara göre yorumlanacaktır. Şirketimiz ve siz, işbu yasal
+          şartlardan doğacak her türlü uyuşmazlığın çözümünde Türkiye
+          Cumhuriyeti mahkemelerinin münhasır yetkisine tabi olduğunu geri
+          alınamaz bir şekilde kabul etmektesiniz.
+        </p>
+      </section>
+
+      <section id="s10">
+        <h2>10. Uyuşmazlıkların Çözümü</h2>
+
+        <h3>İdari Müzakereler:</h3>
+        <p>
+          Herhangi bir uyuşmazlığın çözümünü hızlandırmak ve maliyetleri
+          düşürmek amacıyla Taraflar, herhangi bir dava veya hukuki süreç
+          başlatmadan önce, uyuşmazlığı en az 30 gün boyunca karşılıklı olarak
+          iyi niyetli idari müzakereler yoluyla çözmeye çalışacaklarını kabul
+          ederler.
+        </p>
+
+        <h3>Yetkili Mahkeme:</h3>
+        <p>
+          İdari müzakerelerle çözülemeyen her türlü uyuşmazlık, tüketici hakem
+          heyetlerinin yasal sınırları saklı kalmak kaydıyla, İstanbul
+          Mahkemeleri ve İcra Daireleri tarafından çözümlenecektir.
+        </p>
+      </section>
+
+      <section id="s11">
+        <h2>11. Düzeltmeler</h2>
+        <p>
+          Hizmetlerdeki bilgiler, yazım hataları, yanlışlıklar veya eksiklikler
+          içerebilir. Hizmetlerdeki her türlü hatayı, yanlışlığı veya eksikliği
+          önceden bildirimde bulunmaksızın düzeltme, bilgileri değiştirme veya
+          güncelleme hakkını saklı tutarız.
+        </p>
+      </section>
+
+      <section id="s12">
+        <h2>12. Sorumluluk Reddi (Disclaimer)</h2>
+        <div>
+          <p>
+            Hizmetler "olduğu gibi" ve "mevcut olduğu sürece" esasıyla
+            sunulmaktadır. Hizmetleri kullanımınızla ilgili riskler tamamen size
+            aittir. İnce Ele tarafından sağlanan hiçbir analiz, yapay zeka
+            çıktısı veya veri, tıbbi bir tavsiye, teşhis veya laboratuvar sonucu
+            niteliği taşımaz. Gıda alerjileri, intoleranslar ve sağlıkla ilgili
+            kritik kararlarda nihai doğrulama ve sorumluluk kullanıcıya aittir.
+            Yasaların izin verdiği en geniş ölçüde, içerik hataları, kişisel
+            yaralanmalar, maddi hasarlar, sunucularımıza yetkisiz erişimler veya
+            sisteme sızabilecek virüslerden dolayı şirketimiz hiçbir hukuki
+            sorumluluk kabul etmez.
+          </p>
+        </div>
+      </section>
+
+      <section id="s13">
+        <h2>13. Sorumluluğun Sınırlandırılması</h2>
+        <p>
+          Yasaların izin verdiği azami ölçüde, şirketimiz, yöneticilerimiz veya
+          çalışanlarımız; hizmetlerin kullanımından doğan kâr kaybı, veri kaybı
+          veya diğer dolaylı zararlardan ötürü size karşı sorumlu tutulamaz.
+          Şirketimizin size karşı doğabilecek her türlü yasal tazminat
+          sorumluluğu, eğer varsa şirkete ödediğiniz tutar veya en fazla 1.000
+          TRY (Türk Lirası) ile sınırlandırılmıştır.
+        </p>
+      </section>
+
+      <section id="s14">
+        <h2>14. Tazminat</h2>
+        <p>
+          Hizmetleri kullanımınızdan, işbu Yasal Şartların ihlalinden veya
+          üçüncü bir şahsın (fikri mülkiyet hakları dahil) haklarını ihlal
+          etmenizden kaynaklanan her türlü makul avukatlık ücreti dahil olmak
+          üzere tüm kayıp, zarar, sorumluluk ve taleplere karşı Şirketimizi,
+          iştiraklerimizi ve çalışanlarımızı savunmayı ve tazmin etmeyi kabul
+          edersiniz.
+        </p>
+      </section>
+
+      <section id="s15">
+        <h2>15. Kullanıcı Verileri</h2>
+        <p>
+          Hizmetlerin performansını yönetmek amacıyla ilettiğiniz bazı verileri
+          ve kullanımınızla ilgili verileri saklamaktayız. Düzenli olarak rutin
+          veri yedeklemeleri yapsak da, ilettiğiniz veya Hizmetleri kullanarak
+          gerçekleştirdiğiniz tüm faaliyetlere ilişkin verilerden tamamen siz
+          sorumlusunuz. Bu tür verilerin kaybı veya bozulmasından dolayı bize
+          karşı herhangi bir dava hakkından feragat etmektesiniz.
+        </p>
+      </section>
+
+      <section id="s16">
+        <h2>16. Elektronik İletişim, İşlemler ve İmzalar</h2>
+        <p>
+          Hizmetleri ziyaret etmek, bize e-posta göndermek ve çevrim içi
+          formları doldurmak elektronik iletişim teşkil eder. Size elektronik
+          ortamda, e-posta yoluyla veya Hizmetler üzerinden sunacağımız tüm
+          sözleşmelerin, bildirimlerin ve diğer iletişimlerin, bu iletişimlerin
+          yazılı olması yönündeki yasal gereklilikleri karşıladığını kabul
+          edersiniz. İŞBU SÖZLEŞMEYLE, ELEKTRONİK İMZALARIN, SÖZLEŞMELERİN VE
+          KAYITLARIN KULLANIMINI KABUL ETMEKTESİNİZ.
+        </p>
+      </section>
+
+      <section id="s17">
+        <h2>17. Çeşitli Hükümler</h2>
+        <p>
+          Bu Yasal Şartlar ve Hizmetlerde yayınladığımız tüm politikalar, siz ve
+          bizim aramızdaki anlaşmanın tamamını oluşturur. Herhangi bir hakkı
+          veya hükmü uygulamamamız, söz konusu hak veya hükümden feragat
+          ettiğimiz anlamına gelmez. Bu Yasal Şartların herhangi bir hükmünün
+          yasa dışı, geçersiz veya uygulanamaz olduğuna karar verilirse, söz
+          konusu hüküm bu Yasal Şartlardan ayrılabilir sayılır ve kalan
+          hükümlerin geçerliliğini ve uygulanabilirliğini etkilemez.
+        </p>
+      </section>
+
+      <section id="s18">
+        <h2>18. İletişim</h2>
+        <p>
+          Hizmetlerle ilgili bir şikayeti çözüme kavuşturmak veya Hizmetlerin
+          kullanımı hakkında daha fazla bilgi almak için lütfen bizimle şu
+          adresten iletişime geçin:
+        </p>
+        <p>
+          <strong>Eda İpek Sanlı &amp; Gözde Büyükyılmaz</strong><br />
+          E-posta:
+          <a href="mailto:inceele.app@gmail.com">inceele.app@gmail.com</a><br />
+          Adres: İstanbul / Türkiye
+        </p>
+      </section>
+    </div>
+
+    <footer>
+      &copy; 2026 Eda İpek Sanlı &amp; Gözde Büyükyılmaz &mdash; İnce Ele
+      &nbsp;|&nbsp;
+      <a href="index.html">Gizlilik Politikası</a>
+    </footer>
+  </body>
+</html>
